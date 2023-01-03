@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 function Header() {
   const { data: session } = useSession();
   const router = useRouter();
-  console.log('session is', session);
+  // console.log('session is', session);
   return (
     <div className='sticky bg-[#b1b8d3] top-0 z-[1000] flex items-center px-10 md:px-12 h-[72px]'>
       <Image
