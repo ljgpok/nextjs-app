@@ -6,12 +6,13 @@ import { useSession, getProviders, getSession } from 'next-auth/react';
 import Login from '../components/Login';
 import Slider from '../components/Slider';
 import MoviesCollection from '../components/MoviesCollection';
+import ShowsCollection from '../components/ShowsCollection';
 
 const Home: NextPage = ({
   popularMovies,
   popularShows,
   top_ratedMovies,
-  top_ratedShowsRes,
+  top_ratedShows,
   providers,
 }: any) => {
   const { data: session } = useSession();
@@ -30,6 +31,13 @@ const Home: NextPage = ({
         <div>
           <Slider />
           <MoviesCollection results={popularMovies} title='Popular Movies' />
+          <ShowsCollection results={popularShows} title='Popular Shows' />
+
+          <MoviesCollection
+            results={top_ratedMovies}
+            title='Top Rated Movies'
+          />
+          <ShowsCollection results={top_ratedShows} title='Top Rated Shows' />
         </div>
       )}
     </div>
