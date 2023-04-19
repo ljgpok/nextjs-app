@@ -39,7 +39,7 @@ const Home: NextPage = ({
           />
           <ShowsCollection results={top_ratedShows} title='Top Rated Shows' />
         </div>
-      )}
+      {/* )} */}
     </div>
   );
 };
