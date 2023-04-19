@@ -25,9 +25,9 @@ const Home: NextPage = ({
       </Head>
 
       <Header />
-      {!session ? (
+      {/* {!session ? (
         <Login providers={providers} />
-      ) : (
+      ) : ( */}
         <div>
           <Slider />
           <MoviesCollection results={popularMovies} title='Popular Movies' />
