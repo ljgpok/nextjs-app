@@ -43,7 +43,12 @@ function Movie({ result }: any) {
               }
               layout='fill'
               objectFit='cover'
+              priority
               alt=''
+              width={1920}
+              height={1080}
+              sizes='(max-width: 640px) 100vw, (max-width: 1024px) 1024px, 1920px'
+              className='rounded-lg'
             />
           </div>
           <div className='absolute inset-y-28 md:inset-y-auto md:bottom-10 inset-x-4 md:inset-x-12 space-y-6 z-50'>
